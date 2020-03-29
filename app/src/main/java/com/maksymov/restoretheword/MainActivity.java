@@ -67,9 +67,12 @@ public class MainActivity extends AppCompatActivity implements Navigator {
         this.time = time;
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        android.os.Process.killProcess(android.os.Process.myPid());
-    }
+//!!!!!!!!!!!!!!!!!!!!!!!!!!! тут була помилка, виникала вона через те, що фрагмети викликали цей матод
+// "неявно" коли користувач натискав кнопку назад
+
+//    @Override
+//    public void onBackPressed() {
+//        super.onBackPressed();
+//        android.os.Process.killProcess(android.os.Process.myPid());
+//    }
 }

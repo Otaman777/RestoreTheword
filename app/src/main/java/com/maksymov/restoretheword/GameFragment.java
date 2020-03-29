@@ -100,10 +100,7 @@ public class GameFragment extends Fragment implements View.OnClickListener {
         return inflater.inflate(R.layout.fragment_game, container, false);
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-    }
+
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -196,6 +193,7 @@ public class GameFragment extends Fragment implements View.OnClickListener {
 
             @Override
             public void onFinish() {
+                Log.d("ZZZ", "FINISHED BY METHOD onFinish");
                 dialogFinish();
             }
         }.start();
